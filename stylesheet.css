@@ -1,3 +1,10 @@
+:root {
+ --graygit: #24292e;
+ --greengit: #28a745;
+ --greengradient: linear-gradient(-180deg,#34d058,#28a745 90%);
+    
+}
+
 * {
     font-family: sans-serif;
     margin: 0;
@@ -18,30 +25,56 @@
 }
 
 h1 {
-    font-size: 4rem;;
+    font-size: 5rem;;
     color: #24292e;
 }
 
 
 p {
-    width:424px;
-    margin:0em 0 1em 0;
-    font-size:14pt;  
+    margin:.5em 0 1.5em 0;
+    width:700px;
+    font-size:11pt;  
     text-align: center;
 }
 
+.madewith-text {
+    width:auto;
+    line-height: 24.42px;
+    margin:0;
+}
+
+footer {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-self:baseline;
+    align-items: center;
+    top:68vh;
+}
+
+footer .git-icon {
+    margin:.5em;
+    width:25px;
+    list-style:25px;
+}
+
+
+
 button {
-    transition: 200ms linear;
+    transform: scale(.8);
+    transition: 100ms linear;
     width:212px;
     padding: .7em 0em;
     border-radius: 5px;
     border:none;
-    background:#6f42c1;
+    background: linear-gradient(-180deg,#422675,#6f42c1 90%);
     font-size:20px;
-    border:3px solid #422675;
-    color:black;
+    border:5px solid #422675;
     font-size: 15pt;
     color:#e7b6fa;
+    font-weight: bolder;;
+    
  
 }
 
@@ -50,12 +83,15 @@ button:hover {
   
     cursor: pointer;
     background:#422675;
-    border:3px solid #6f42c1;
-    transform: perspective(20em) rotateX(30deg);
-    
+    border:5px solid #6f42c1;
+    /* transform: perspective(20em) rotateX(30deg); */
+
+
 }
 
-button:hover::after {
+
+
+/* button:hover::after {
     content: '';
     display: block;
     position: relative;
@@ -75,5 +111,5 @@ button:hover::before {
     border-top:1px solid #6f42c1;
     border-radius:5px;
 
-}
+} */
 
