@@ -1,6 +1,7 @@
 :root {
     --border:#e1e4e8;
     --background:#f6f8fa;
+    --font:#211F1F;
 }
 * {
     font-family: sans-serif;
@@ -8,25 +9,89 @@
     padding:0;
 }
 
+.intro {
+    
+    animation-name: example;
+    animation-fill-mode: forwards;
+    animation-delay: 3.3s;
+    animation-duration: 1s;
+    position:fixed;
+    top:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    background-color: #fff;
+    width:100vw;
+    height:100vh;;
+    font-weight: bolder;
+    font-family: roboto, sans-serif;
+    color: #422675;
+    overflow: hidden;
+}
+
+  @keyframes example {
+      0% {height: 100vh;}
+      100%{height:0vh;}
+  }
+  
+.intro h1{
+    color:#422675;
+    animation-name: h1animate;
+    animation-fill-mode: forwards;
+    animation-delay:1.5s;
+    animation-duration:1s;
+    margin:0;
+    padding:0;
+    font-size: 2.5em;
+    text-align:center;
+}
+
+@keyframes h1animate {
+    0% {opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.intro p {
+    color:#422675;
+    animation-name: p1animate;
+    animation-fill-mode: forwards;
+    animation-duration:0.7s;
+    animation-delay:2s;
+    text-align: center;
+    font-size:1.1em;
+}
+
+@keyframes p1animate {
+    0% {transform: translateY(0);}
+    100%{ transform: translateY(-9vh);}
+}
+
 body {
-   margin: auto 50px;
+   background: var(--background);
+   
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    margin:.25em 0;
+    color: var(--font);
 }
 
 p {
-    font-size:17px;
-    margin:0;
+    color: var(--font);
+    font-size:1.1rem;
+    margin:1em 0;
+    text-align: justify;
 }
 
 .wrapper {
-margin:3em 0;
+margin:2em 300px;
 }
 
 ul {
-    display:block;
+    display:flex;
     list-style: none;
     margin:0;
     padding:0;
@@ -35,16 +100,17 @@ ul {
 }
 
 ul li a {
-    font-size: 20px;
-    color:black;
+    font-size: 1.2rem;
+    color:gray;
     line-height: 18px;
+
 
 }
 
 
 li img {
     width:15px;
-    margin:0 .5em;
+    margin:0 1em;
 
 }
 
@@ -57,33 +123,63 @@ main p, ul {
     padding:0;
 }
 
+
+
+    
 .twobox {
+
+background:gray;
 display:flex;
 flex-direction: row;
-line-height:200px;
+justify-content: center;
+line-height:120px;
 font-weight: bolder;
-height:auto;
-margin-top:3em;
-padding:0;
-width:50%;
-
+margin-top:5em;
 }
+
 
 
 .box1 {
-    border-radius: 6px;
-    background: gray;
-    height:200px;
-    width:100%;
+    border-radius: 50%;
+    background: #6f42c1;
+    height:120px;
+    width:120px;
     text-align: center;
-    margin:0 3em 1em 0;
-
+    border: 5px solid #422675;
+    color:#e7b6fa;
+    margin:2.5em;
 }
+
 
 .below-box-text {
-    margin:0;
-    padding:1em;
-    width:50%;
     text-align: center;
+    color:var(--font);
 }
 
+
+.breaker {
+    width:100%;
+    height:1px;
+    background: var(--border);
+}
+
+
+
+span {
+    text-align: center;
+    margin:0 1em;
+    font-size: 19px;
+    color:gray;
+    font-weight: bolder;
+
+}
+
+.link-github {
+    text-align: justify;
+
+}
+
+.link-github em {
+    color:#422675;
+    background:#e7b6fa;
+}
