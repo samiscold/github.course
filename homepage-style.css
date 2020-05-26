@@ -74,16 +74,18 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
-    margin:.25em 0;
+    font-size: 2.5rem;
+    margin-top:1.5em;
     color: var(--font);
+    text-transform: uppercase;
 }
 
 p {
     color: var(--font);
     font-size:1.1rem;
-    margin:1em 0;
-    text-align: justify;
+    margin-top:1em;
+    line-height: 1.7em;
+
 }
 
 .wrapper {
@@ -123,34 +125,6 @@ main p, ul {
     padding:0;
 }
 
-
-
-    
-.twobox {
-
-background:gray;
-display:flex;
-flex-direction: row;
-justify-content: center;
-line-height:120px;
-font-weight: bolder;
-margin-top:5em;
-}
-
-
-
-.box1 {
-    border-radius: 50%;
-    background: #6f42c1;
-    height:120px;
-    width:120px;
-    text-align: center;
-    border: 5px solid #422675;
-    color:#e7b6fa;
-    margin:2.5em;
-}
-
-
 .below-box-text {
     text-align: center;
     color:var(--font);
@@ -161,6 +135,7 @@ margin-top:5em;
     width:100%;
     height:1px;
     background: var(--border);
+    margin:2em 0;
 }
 
 
@@ -182,4 +157,84 @@ span {
 .link-github em {
     color:#422675;
     background:#e7b6fa;
+    padding:0;
+    margin:0;
 }
+
+.highlight {
+    color:#422675;
+    padding:0;
+    margin:0;
+}
+
+.list {
+    margin:1em 30em 0 0;
+}
+
+.listcover {
+    background:#e1e4e8;
+    border-radius: 10px;
+    margin-top:2em;
+    padding:1em;
+}
+
+
+
+
+.repository {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.steps button {
+    color: #24292e;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+}
+
+input {
+    padding:6px 12px;
+    margin-left:.5em;
+}
+
+.buttondesign {
+    margin-top:2em;
+}
+
+.anime-input-p {
+    position:relative;
+    top:-50px;
+    left:130px;
+    animation: type 1s steps(13);
+    overflow: hidden;
+    white-space: nowrap;
+    opacity:0;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes type {
+    0% {
+        opacity:1;
+        width:0ch;
+    }
+    100% {
+        opacity:1;
+        width:13ch;
+    }
+}
+
