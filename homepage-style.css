@@ -294,7 +294,7 @@ height:34px;
     opacity:0;
     animation-fill-mode: forwards;
     font-size: 1.1em; 
-    animation-delay: 5s;
+    animation-delay: 5.3s;
     line-height:1.7em;
     
 }
@@ -330,22 +330,24 @@ height:34px;
 
 .steps {
     animation-name: scroll;
-    animation-duration: 2s;
+    animation-delay: 4.4s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     background:#fff;
     border:1px solid var(--border);
     border-radius: 10px;
     padding:50px;
-    height:auto;
+    opacity:0;
 }
 
 @keyframes scroll {
     0%{
-        opacity:0;
+        opacity: 1;
         transform:translateY(15%);
     }
     100% {
+        opacity:1;
         transform: translateY(0%);
     }
 }
