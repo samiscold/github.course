@@ -1,4 +1,6 @@
 # github.course
+
 A course to Learn Github
-Check out: 
-[github.course](https://samiscold.github.io/github.course/)
+A course to learn how to use git & github.com, made with HTML & CSS.
+
+
